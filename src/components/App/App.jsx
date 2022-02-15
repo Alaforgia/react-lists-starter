@@ -1,12 +1,12 @@
-import { useState } from 'react';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
 
 function App() {
   const [creatureList, setCreatureList] = useState([
-    { name: 'Unicorn', origin: 'Britain' },
-    { name: 'Sphinx', origin: 'Egypt' },
-    { name: 'Jackalope', origin: 'America' }
-  ])
+    { name: "Unicorn", origin: "Britain" },
+    { name: "Sphinx", origin: "Egypt" },
+    { name: "Jackalope", origin: "America" },
+  ]);
 
   return (
     <>
@@ -20,6 +20,7 @@ function App() {
             {/* We can use JSON.stringify() to dump raw data into our DOM */}
             {JSON.stringify(creatureList)}
           </pre>
+          <p>Getting one creature looks like this: {creatureList[0].name}</p>
         </div>
       </div>
     </>
