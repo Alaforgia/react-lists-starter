@@ -21,6 +21,13 @@ function App() {
             {JSON.stringify(creatureList)}
           </pre>
           <p>Getting one creature looks like this: {creatureList[0].name}</p>
+          <ul>
+            {creatureList.map((creature) => (
+              <li key={creature.name}>
+                {creature.name} is from {creature.origin}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </>
